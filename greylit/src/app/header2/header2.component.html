@@ -1,0 +1,50 @@
+<nav
+  class="navbar navbar-expand-md navbar-dark"
+  style="background-color: #FF8C00;"
+>
+  <img class="h-75" src="/assets/images/logo/logo-drk.png" />
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Refined Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/upload" title="Upload">Upload</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/analytics" title="Analytics"
+          >Analytics</a
+        >
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <button routerLink="/login">Log Out</button>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <a routerLink="/searchresults"
+        ><button class="btn btn-light my-sm-0" type="submit">Search</button></a
+      >
+    </form>
+  </div>
+</nav>
